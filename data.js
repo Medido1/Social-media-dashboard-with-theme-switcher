@@ -1,4 +1,7 @@
 import facebookIcon from "./src/assets/images/icon-facebook.svg";
+import twitterIcon from "./src/assets/images/icon-twitter.svg";
+import instagramIcon from "./src/assets/images/icon-instagram.svg";
+import youtubeIcon from "./src/assets/images/icon-youtube.svg";
 
 const dashboard = [
   {
@@ -11,7 +14,7 @@ const dashboard = [
   },
   {
     id:2,
-    icon: "./src/assets/images/icon-twitter.svg",
+    icon: twitterIcon,
     number: 1044,
     type: "followers",
     change: 99,
@@ -19,14 +22,14 @@ const dashboard = [
   },
   {
     id:3,
-    icon: "./src/assets/images/icon-instagram.svg",
+    icon: instagramIcon,
     number: "11k",
     type: "followers",
     change: 1099,
     borderTop: "border-insta",
   }, {
     id: 4,
-    icon: "./src/assets/images/icon-youtube.svg",
+    icon: youtubeIcon,
     number: 8239,
     type: "subscribers",
     change: -144,
@@ -52,42 +55,42 @@ const overview = [
   {
     id:3,
     type: "Likes",
-    icon: "./src/assets/images/icon-instagram.svg",
+    icon: instagramIcon,
     number: 5462,
     change: 2257,
   },
   {
     id:4,
     type: "Profile Views",
-    icon: "./src/assets/images/icon-instagram.svg",
+    icon: instagramIcon,
     number: "52k",
     change: 1375,
   },
   {
     id: 5,
     type: "Retweets",
-    icon: "./src/assets/images/icon-twitter.svg",
+    icon: twitterIcon,
     number: 117,
     change: 303
   },
   {
     id: 6,
     type: "Likes",
-    icon: "./src/assets/images/icon-twitter.svg",
+    icon: twitterIcon,
     number: 507,
     change: 553,
   },
   {
     id: 7,
     type: "Likes",
-    icon: "./src/assets/images/icon-youtube.svg",
+    icon: youtubeIcon,
     number: 107,
     change: -19,
   },
   {
     id: 8,
     type: "Total Views",
-    icon: "./src/assets/images/icon-youtube.svg",
+    icon: youtubeIcon,
     number: 1407,
     change: -12,
   }
