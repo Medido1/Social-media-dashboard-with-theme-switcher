@@ -7,15 +7,16 @@ function Header({isDarkMode, setIsDarkMode}) {
   return (
     <header 
       className={
-        `px-5 pt-8 pb-16 rounded-bl-2xl rounded-br-2xl ${isDarkMode ? `bg-very_dark_blue`:`bg-card_light`}`
+        `px-5 pt-8 pb-16 rounded-bl-2xl rounded-br-2xl ${isDarkMode ? `bg-very_dark_blue`:`bg-card_light`}
+          lg:flex lg:justify-between lg:items-center`
       }>
-      <div className="border-b border-b-slate-600 pb-4">
+      <div className="border-b border-b-slate-600 pb-4 lg:border-b-0">
         <h1 className={`text-2xl font-extrabold ${isDarkMode ? `text-white`:`text-black`}`}>
           Social Media Dashboard
         </h1>
-        <p className="font-color_light text-sm font-bold">Total followers: </p>
+        <p className="font-color_light text-sm font-bold">Total followers: 23.004</p>
       </div>
-      <div className="flex justify-between items-center pt-4">
+      <div className="flex justify-between items-center pt-4 lg:pt-0 lg:gap-4">
         <p className="font-color_light text-sm font-bold">Dark Mode</p>
         <button 
           onClick={toggleMode}
