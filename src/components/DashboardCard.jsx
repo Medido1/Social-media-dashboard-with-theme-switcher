@@ -4,8 +4,12 @@ import downIcon from '../assets/images/icon-down.svg';
 function DashboardCard({card, isDarkMode}) {
   return (
     <div 
-      className={`${card.borderTop} flex flex-col items-center gap-8 
-      w-90vw rounded-sm pt-8 pb-6 max-w-72 ${isDarkMode ? `bg-card_dark` : `bg-card_light`}`}>
+      className={`${card.borderTop} cursor-pointer flex flex-col items-center gap-8 
+      w-90vw rounded-sm pt-8 pb-6 max-w-72 
+      ${isDarkMode ? 
+        `bg-card_dark hover:bg-darkHover` :
+        `bg-card_light hover:bg-lightHover`}
+      `}>
       <div className="flex items-center gap-2">
         <img src={card.icon} alt="social media icon"/>
         <p className="font-color_light text-sm font-bold">@nathanf</p>

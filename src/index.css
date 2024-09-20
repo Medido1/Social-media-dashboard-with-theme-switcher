@@ -6,6 +6,10 @@ body {
   @apply font-inter;
 }
 
+#root {
+  @apply min-h-screen;
+}
+
 :root {
   /* # Colors */
   
@@ -20,7 +24,7 @@ body {
   --YouTube: hsl(348, 97%, 39%);
 
   /* ## Dark Theme */
-  --Toggle_dark: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --Toggle_dark: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --Very_Dark_Blue: hsl(230, 17%, 14%); /* (BG) */
   --Dark_Desaturated_Blue: hsl(228, 28%, 20%); /* (Card BG) */
   --Desaturated_Blue: hsl(228, 34%, 66%); /* (Text) */

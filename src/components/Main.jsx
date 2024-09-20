@@ -8,7 +8,7 @@ function Main({isDarkMode}) {
   const [overviewData, setOverview] = useState(overview);
   
   return (
-    <main className='flex flex-col p-4 -mt-12'>
+    <main className='flex flex-col p-4 -mt-12 sm:px-8 lg:px-16'>
       <div className="flex flex-col gap-4 items-center 
         sm:grid sm:grid-cols-2
         lg:grid lg:grid-cols-4

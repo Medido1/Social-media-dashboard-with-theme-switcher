@@ -3,7 +3,12 @@ import downIcon from '../assets/images/icon-down.svg';
 
 function OverviewCard({card, isDarkMode}) {
   return (
-    <div className={`${isDarkMode ? `bg-card_dark`: `bg-card_light`} p-8 rounded-sm`}>
+    <div className={
+      `${isDarkMode ? 
+        `bg-card_dark hover:bg-darkHover`: 
+        `bg-card_light hover:bg-lightHover`} 
+        cursor-pointer p-8 rounded-sm
+      `}>
       <div className="flex justify-between items-center mb-6">
         <p className="font-color_light font-bold">{card.type}</p>
         <img src={card.icon} alt="social media icon" />
