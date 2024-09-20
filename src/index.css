@@ -45,6 +45,9 @@ body {
 .bg-card_light {
   background-color: var(--Light_Grayish_Blue);
 }
+.bg-card_dark {
+  background-color: var(--Dark_Desaturated_Blue);
+}
 .font-color_light {
   color: var(--Dark_Grayish_Blue);
 }

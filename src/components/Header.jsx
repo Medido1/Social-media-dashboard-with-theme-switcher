@@ -1,19 +1,22 @@
 import { useState } from "react";
 
-function Header() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
+function Header({isDarkMode, setIsDarkMode}) {
   function toggleMode() {
     setIsDarkMode(!isDarkMode)
   }
   return (
-    <header className="px-5 pt-8 pb-16 bg-card_light rounded-bl-2xl rounded-br-2xl">
+    <header 
+      className={
+        `px-5 pt-8 pb-16 rounded-bl-2xl rounded-br-2xl ${isDarkMode ? `bg-very_dark_blue`:`bg-card_light`}`
+      }>
       <div className="border-b border-b-slate-600 pb-4">
-        <h1 className="text-2xl font-extrabold">Social Media Dashboard</h1>
-        <p className="font-color_light text-sm">Total followers: </p>
+        <h1 className={`text-2xl font-extrabold ${isDarkMode ? `text-white`:`text-black`}`}>
+          Social Media Dashboard
+        </h1>
+        <p className="font-color_light text-sm font-bold">Total followers: </p>
       </div>
       <div className="flex justify-between items-center pt-4">
-        <p className="font-color_light text-sm">Dark Mode</p>
+        <p className="font-color_light text-sm font-bold">Dark Mode</p>
         <button 
           onClick={toggleMode}
           className={`rounded-full pt-1 pb-1 
