@@ -7,7 +7,7 @@ function Header() {
     setIsDarkMode(!isDarkMode)
   }
   return (
-    <header className="px-5 py-8 bg-card_light rounded-bl-2xl rounded-br-2xl">
+    <header className="px-5 pt-8 pb-16 bg-card_light rounded-bl-2xl rounded-br-2xl">
       <div className="border-b border-b-slate-600 pb-4">
         <h1 className="text-2xl font-extrabold">Social Media Dashboard</h1>
         <p className="font-color_light text-sm">Total followers: </p>
