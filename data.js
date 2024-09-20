@@ -1,7 +1,9 @@
+import facebookIcon from "./src/assets/images/icon-facebook.svg";
+
 const dashboard = [
   {
     id: 1,
-    icon : "./src/assets/images/icon-facebook.svg",
+    icon : facebookIcon,
     number: 1987,
     type: "followers",
     change: 12,
@@ -36,14 +38,14 @@ const overview = [
   {
     id :1,
     type: "Page Views",
-    icon: "./src/assets/images/icon-facebook.svg",
+    icon: facebookIcon,
     number: 87,
     change: 3,
   },
   {
     id:2,
     type: "Likes",
-    icon: "./src/assets/images/icon-facebook.svg",
+    icon: facebookIcon,
     number: 52,
     change: -2,
   },
